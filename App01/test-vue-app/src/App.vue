@@ -2,7 +2,9 @@
   <div id="app">
     <img class="logo" src="./assets/logo.png">
     <hello></hello>
-    <!--  -->
+    <!-- <Hello></Hello> -->
+    <Hellox></Hellox>
+    <!-- 不区分大小写 -->
     <p>
       Welcome to your Vue.js app!
     </p>
@@ -33,6 +35,13 @@ export default {
   }
 }
 // 导出组件Hello接口
+
+import Hellox from './components/Hellox'
+export Hellox {
+  components: {
+    Hellox
+  }
+}
 </script>
 
 <style>
