@@ -2,6 +2,7 @@
   <div id="app">
     <img class="logo" src="./assets/logo.png">
     <hello></hello>
+    <!--  -->
     <p>
       Welcome to your Vue.js app!
     </p>
@@ -24,12 +25,14 @@
 
 <script>
 import Hello from './components/Hello'
+// 从'./components/Hello'导入组件Hello
 
 export default {
   components: {
     Hello
   }
 }
+// 导出组件Hello接口
 </script>
 
 <style>
