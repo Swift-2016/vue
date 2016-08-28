@@ -3,12 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<title>vue.js</title>
+	<!-- http://codepen.io/xgqfrms/pen/wWVAaQ -->
+	<!-- cdn -->
 </head>
 <body>
 	<div>
-		<div></div>
+		<div>
+			<!-- <app-todo></app-todo> -->
+			<div id="app-todo">
+			  <input v-model="newTodo" v-on:keyup.enter="addTodo">
+			  <ul>
+			    <li v-for="todo in todos">
+			      <span>{{ todo.text }}</span>
+			      <button v-on:click="removeTodo($index)">X</button>
+			    </li>
+			  </ul>
+			</div>
+		</div>
 	</div>
-	<script src="./libs/"></script>
+	<!-- cdn -->
+	<script src="http://cdn.xgqfrms.xyz/vue/1.0.26/vue.min.js"></script>
+	<!-- <script src="./libs/vue.js"></script> -->
+	<script src="./js/app.js"></script>
+	<!-- <script src="./js/app.vue"></script> -->
+	<!-- <script>
+		import App-todo from './js/app'
+		export default {
+		  components: {
+		    App-todo
+		  }
+		}
+	</script> -->
 	<script>
 	    // === 与 ==
 	    // http://www.cnblogs.com/xgqfrms/p/5769202.html
