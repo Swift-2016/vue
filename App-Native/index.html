@@ -12,7 +12,8 @@
 		<div>
 			<!-- <app-todo></app-todo> -->
 			<div id="app-todo">
-			<input v-model="newTodo" v-on:keyup.enter="addTodo" placeholder="press &lt;h3&gt;Enter&lt;#%2f;h3&gt; button to add items">
+			<input v-model="newTodo" v-on:keyup.enter="addTodo" placeholder="press &lt;h3&gt;Enter&lt;&frasl; h3&gt; button to add items">
+			<!-- <input v-model="newTodo" v-on:keyup.enter="addTodo" placeholder="press Enter button to add items" > -->
 			  <ul>
 			    <li v-for="todo in todos">
 			      <span>{{ todo.text }}</span>
