@@ -2,13 +2,13 @@
   <div id="app">
     <img class="logo" src="./assets/logo.png">
     <hello></hello>
-    <!-- <Hello></Hello> -->
-    <Hellox></Hellox>
-    <!-- 不区分大小写 -->
+    <new></new>
+    <!-- <Hellox></Hellox> -->
+    <!-- 不区分大小写 ?-->
     <p>
       Welcome to your Vue.js app!
     </p>
-    <p>
+    <!-- <p>
       To get a better understanding of how this boilerplate works, check out
       <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
       It is also recommended to go through the docs for
@@ -21,56 +21,47 @@
       You may also want to checkout
       <a href="https://github.com/vuejs/vue-router/" target="_blank">vue-router</a> for routing and
       <a href="https://github.com/vuejs/vuex/" target="_blank">vuex</a> for state management.
-    </p>
+    </p> -->
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
-// 从'./components/Hello'导入组件Hello
-
-export default {
-  components: {
-    Hello
+  import Hello from './components/Hello'
+  // 从'./components/Hello'导入组件Hello
+  import New from './components/New'
+  // 注册组件Hello,New
+  // 导出组件Hello,New接口
+  export default {
+    components: {
+      Hello,
+      New
+    }
   }
-}
-// 导出组件Hello接口
-
-import Hellox from './components/Hellox'
-export Hellox {
-  components: {
-    Hellox
-  }
-}
 </script>
 
 <style>
-html {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-#app {
-  color: #2c3e50;
-  margin-top: -100px;
-  max-width: 600px;
-  font-family: Source Sans Pro, Helvetica, sans-serif;
-  text-align: center;
-}
-
-#app a {
-  color: #42b983;
-  text-decoration: none;
-}
-
-.logo {
-  width: 100px;
-  height: 100px
-}
+  html {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  #app {
+    color: #2c3e50;
+    margin-top: -100px;
+    max-width: 600px;
+    font-family: Source Sans Pro, Helvetica, sans-serif;
+    text-align: center;
+  }
+  #app a {
+    color: #42b983;
+    text-decoration: none;
+  }
+  .logo {
+    width: 100px;
+    height: 100px
+  }
 </style>

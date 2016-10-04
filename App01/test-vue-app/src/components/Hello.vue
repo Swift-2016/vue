@@ -4,39 +4,21 @@
   </div>
 </template>
 
-<!-- <template>
-  <div class="Hellox">
-    <h3>{{ msgx }}</h3>
-  </div>
-</template> -->
-
 <script>
-export default {
-  data () {
-    return {
-      // note: changing this line won't causes changes
-      // with hot-reload because the reloaded component
-      // preserves its current state and we are modifying
-      // its initial state.
-      msg: 'Hello xgqfrms!(powered by vue.js)'
+  export default {
+    data () {
+      return {
+        msg: 'Hello xgqfrms!(powered by vue.js)'
+      }
     }
   }
-}
-// export default {
-//   data () {
-//     return {
-//       msgx: 'Hellox xgqfrms!'
-//     }
-//   }
-// }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1 {
-  color: #42b983;
-}
-/*h3 {
-  color: #42ff83;
-}*/
+  h1 {
+    color: #42b983;
+  }
+  h3 {
+    color: #42ff83;
+  }
 </style>
